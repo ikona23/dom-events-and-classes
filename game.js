@@ -41,8 +41,8 @@ function updateCounts () {
     green: 0,
     invisible: 0
   };
-  var dots = document.getElementsByClassName('board')[0].children;
 
+  var dots = document.getElementsByClassName('board')[0].children;
     for(var i = 0; i < dots.length; i++) {
       if(dots[i].classList.contains('blue')) {
         totals.blue++;
@@ -51,9 +51,7 @@ function updateCounts () {
       }else if(dots[i].classList.contains('invisible')) {
         totals.invisible++;
       }
-
     }
-
     // Once you've done the counting, this function will update the display
     displayTotals(totals);
   }
